@@ -21,6 +21,7 @@ Expected output:
 10 + 4 = 14
 10 - 4 = 6
 10 * 4 = 40
+10 / 4 = 2.5
 ```
 
 ## Calculator Methods
@@ -31,3 +32,5 @@ Expected output:
 | `calculator.subtract(a, b)` | Returns a minus b              |
 | `calculator.multiply(a, b)` | Returns the product of a and b |
 | `calculator.divide(a, b)`   | Returns a divided by b        |
+
+> **Note:** `divide` raises a `ZeroDivisionError` with the message `"Cannot divide by zero"` when `b` is `0`.

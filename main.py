@@ -10,6 +10,7 @@ def main():
     print(f"{x} + {y} = {calculator.add(x, y)}")
     print(f"{x} - {y} = {calculator.subtract(x, y)}")
     print(f"{x} * {y} = {calculator.multiply(x, y)}")
+    print(f"{x} / {y} = {calculator.divide(x, y)}")
 
 
 if __name__ == "__main__":
