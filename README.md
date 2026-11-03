@@ -1,10 +1,10 @@
 # Simple Python Calculator
 
-A minimal calculator project demonstrating basic Python module usage.
+A minimal calculator project demonstrating a class-based Python module.
 
 ## Files
 
-- `calculator.py` — calculator module with `add()`, `subtract()`, and `multiply()` functions
+- `calculator.py` — calculator module with a `Calculator` class
 - `main.py` — demo script that uses the calculator module
 
 ## Usage
@@ -23,10 +23,11 @@ Expected output:
 10 * 4 = 40
 ```
 
-## Functions
+## Calculator Methods
 
-| Function         | Description                    |
-|------------------|--------------------------------|
-| `add(a, b)`      | Returns the sum of a and b     |
-| `subtract(a, b)` | Returns a minus b              |
-| `multiply(a, b)` | Returns the product of a and b |
+| Method                    | Description                    |
+|---------------------------|--------------------------------|
+| `calculator.add(a, b)`      | Returns the sum of a and b     |
+| `calculator.subtract(a, b)` | Returns a minus b              |
+| `calculator.multiply(a, b)` | Returns the product of a and b |
+| `calculator.divide(a, b)`   | Returns a divided by b        |
