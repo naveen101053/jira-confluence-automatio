@@ -27,6 +27,3 @@ htmlcov/
 # IDE
 .vscode/
 .idea/
-
-# Local work files
-work/
