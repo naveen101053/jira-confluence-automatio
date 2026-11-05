@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-Build a Java application that creates a weekly Markdown status report from Jira Cloud for the Costing work bench project. The Scrum Master reviews the generated draft and shares it with client product owners. The report should support planning the remaining business cases for the upcoming quarter using the team's recent delivery velocity.
+Build a python application that creates a weekly Markdown status report from Jira Cloud for the Costing work bench project. The Scrum Master reviews the generated draft and shares it with client product owners. The report should support planning the remaining business cases for the upcoming quarter using the team's recent delivery velocity.
 
 This document defines the requested application; it does not change the existing Python calculator in this repository.
 
@@ -115,7 +115,7 @@ Treat Priority `1` issues as critical. “Open” is determined by the configure
 
 ## 6. Proposed technical design
 
-- **Language:** Java. Select the Java LTS version and build tool during implementation.
+- **Language:** python. Select the python LTS version and build tool during implementation.
 - **Integration:** Jira Cloud REST APIs for issue search/details and changelog data; Jira Software Agile APIs or equivalent board/sprint data for sprint history and planned future sprints.
 - **Configuration:** External configuration for Jira base URL, project/board identifiers, status mappings, blocked rule, field identifiers, quarter end, output directory, and schedule. Keep credentials out of source control.
 - **Authentication:** Use an approved Jira Cloud service account or organizational integration. For a local run, credentials may be supplied through a local gitignored configuration file or environment variables. Never commit credentials or write them to logs.
@@ -123,7 +123,7 @@ Treat Priority `1` issues as critical. “Open” is determined by the configure
 - **Output:** Write each dated report atomically (temporary file followed by rename) so an interrupted run does not leave a partial report.
 - **Logging:** Log run start/end, report path, and actionable error details. Do not log API tokens or unnecessary issue content.
 
-The repository currently contains a Python calculator rather than a Java application. The Java project structure, dependency management, and local scheduler integration therefore need to be established as part of implementation.
+The repository currently contains a Python calculator rather than a python application. The python project structure, dependency management, and local scheduler integration therefore need to be established as part of implementation.
 
 ## 7. Configuration required before production
 
@@ -137,7 +137,7 @@ The following values must be confirmed or supplied at setup:
 6. Quarter calendar and quarter-end date.
 7. Whether the velocity calculation should use all `TCL` Stories or only Stories carrying `Ready for deployment`. The weekly activity scope remains label-filtered.
 8. Local operating-system scheduler and behavior after a missed Monday run.
-9. Java LTS version and build tool.
+9. python LTS version and build tool.
 
 ## 8. Error handling and data quality
 
