@@ -8,7 +8,7 @@
 
 – \[x] Configure .gitignore
 
-– \[ ] Set up development environment
+– \[x] Set up development environment
 
 
 
@@ -25,4 +25,6 @@
 \## Progress Notes
 
 \_AI updates this section as work progresses\_
+
+\- Set up development environment: created `.venv` (Python 3.12), added `requirements-dev.txt` (pytest) and a setup section in README.md. Verified `pytest --version` and `main.py` run in the venv.
 

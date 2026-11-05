@@ -7,6 +7,16 @@ A minimal calculator project demonstrating a class-based Python module.
 - `calculator.py` — calculator module with a `Calculator` class
 - `main.py` — demo script that uses the calculator module
 
+## Development Setup
+
+Requires Python 3.12 or newer. From the project root (PowerShell):
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements-dev.txt
+```
+
 ## Usage
 
 Run the demo:
