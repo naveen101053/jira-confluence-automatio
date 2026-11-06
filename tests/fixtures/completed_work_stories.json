@@ -1,0 +1,161 @@
+[
+  {
+    "key": "TCL-101",
+    "fields": {
+      "summary": "Cost roll-up fix for multi-currency BOM",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Asha Rao"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T10:15:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "TCL-102",
+    "fields": {
+      "summary": "Approval workflow for cost changes",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Vikram Shah"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-10-20T05:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "To Do", "toString": "In Progress"}]},
+      {"created": "2026-11-04T05:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Review", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "TCL-103",
+    "fields": {
+      "summary": "Normalize currency codes on BOM import",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment", "backend"],
+      "status": {"name": "Done"},
+      "assignee": null
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-01T18:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "TCL-104",
+    "fields": {
+      "summary": "Fix rounding error in landed cost calculation",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Meera Iyer"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-10-30T12:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "TCL-105",
+    "fields": {
+      "summary": "Supplier price list validation errors",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "In Progress"},
+      "assignee": {"displayName": "Rahul Nair"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T03:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "Done", "toString": "Reopened"}]},
+      {"created": "2026-11-03T03:35:00.000+0000",
+       "items": [{"field": "status", "fromString": "Reopened", "toString": "In Progress"}]}
+    ]}
+  },
+  {
+    "key": "TCL-106",
+    "fields": {
+      "summary": "Retry logic for supplier API timeouts",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Priya Nambiar"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-02T04:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]},
+      {"created": "2026-11-04T03:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "Done", "toString": "In Progress"}]},
+      {"created": "2026-11-05T08:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "TCL-107",
+    "fields": {
+      "summary": "Export audit log to CSV",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Karan Mehta"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-06T18:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "TCL-108",
+    "fields": {
+      "summary": "Archive stale draft BOMs",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Divya Kapoor"}
+    },
+    "changelog": {"histories": null}
+  },
+  {
+    "key": "TCL-109",
+    "fields": {
+      "summary": "Unrelated urgent fix, not in weekly scope",
+      "issuetype": {"name": "Story"},
+      "labels": ["urgent"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Sana Qureshi"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T06:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "TCL-110",
+    "fields": {
+      "summary": "Login page crashes on empty password",
+      "issuetype": {"name": "Bug"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Imran Siddiqui"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T06:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "TCL-111",
+    "fields": {
+      "summary": "Investigate slow BOM export",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "In Progress"},
+      "assignee": {"displayName": "Asha Rao"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T04:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "To Do", "toString": "In Progress"}]}
+    ]}
+  }
+]
