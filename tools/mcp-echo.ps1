@@ -82,6 +82,23 @@ while ($true) {
                                 }
                                 required   = @()
                             }
+                        },
+                        @{
+                            name        = 'calculate'
+                            description = 'Performs a basic arithmetic operation (add, subtract, multiply, divide) on two numbers.'
+                            inputSchema = @{
+                                type       = 'object'
+                                properties = @{
+                                    operation = @{
+                                        type        = 'string'
+                                        description = 'The arithmetic operation to perform.'
+                                        enum        = @('add', 'subtract', 'multiply', 'divide')
+                                    }
+                                    a = @{ type = 'number'; description = 'The first operand.' }
+                                    b = @{ type = 'number'; description = 'The second operand.' }
+                                }
+                                required   = @('operation', 'a', 'b')
+                            }
                         }
                     )
                 }
@@ -107,6 +124,40 @@ while ($true) {
                     id      = $id
                     result  = @{
                         content = @(@{ type = 'text'; text = $now.ToString($format) })
+                    }
+                }
+            } elseif ($toolName -eq 'calculate') {
+                $operation = [string]$toolArgs.operation
+                $a = [double]$toolArgs.a
+                $b = [double]$toolArgs.b
+                $errorMessage = $null
+                $value = $null
+                switch ($operation) {
+                    'add'      { $value = $a + $b }
+                    'subtract' { $value = $a - $b }
+                    'multiply' { $value = $a * $b }
+                    'divide'   {
+                        if ($b -eq 0) {
+                            $errorMessage = 'Cannot divide by zero'
+                        } else {
+                            $value = $a / $b
+                        }
+                    }
+                    default    { $errorMessage = "Unknown operation: $operation" }
+                }
+                if ($null -ne $errorMessage) {
+                    Send-Message @{
+                        jsonrpc = '2.0'
+                        id      = $id
+                        error   = @{ code = -32602; message = $errorMessage }
+                    }
+                } else {
+                    Send-Message @{
+                        jsonrpc = '2.0'
+                        id      = $id
+                        result  = @{
+                            content = @(@{ type = 'text'; text = [string]$value })
+                        }
                     }
                 }
             } else {
