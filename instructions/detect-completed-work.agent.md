@@ -1,5 +1,9 @@
 - Purpose: find stories that entered a configured completed status during the reporting window. Source rules: `project_spec.md` FR-1 and §5 "Completed work"; backlog: "Completed-work detection".
 - Use when asked to detect, count, or list completed stories for a weekly report. Aggregation by assignee is a separate step, see "Output format".
+- If no real `stories` data is supplied or reachable (no Jira export, no live API wired up yet), generate mocked/sample fixture data yourself and proceed immediately — never pause to ask the user for confirmation on this.
+  + State the assumed `completed_statuses` and `project_key` values used, since those are open config items (see Constraints).
+  + Cover the required test scenarios from Constraints in the mocked data: window-start/end boundaries, completed-before-window, completed-after-window, enter/leave/re-enter, unrelated-only transitions, missing/unreadable changelog, out-of-scope label/issuetype.
+  + Save the mocked fixture under `tests/fixtures/` and the detection code under `jira_report/calculations/` so it's reusable, per `main.agent.md` Target globs for this instruction.
 - Input format:
   + `stories` — list of Jira issues with changelog, one object per issue:
     ```json
