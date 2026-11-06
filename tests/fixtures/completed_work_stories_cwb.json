@@ -1,0 +1,87 @@
+[
+  {
+    "key": "CWB-201",
+    "fields": {
+      "summary": "Fix invoice number collision on batch import",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Noah Clarke"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T05:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "CWB-202",
+    "fields": {
+      "summary": "Warehouse bin relabeling tool",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Emma Liu"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-10-29T10:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "CWB-203",
+    "fields": {
+      "summary": "Carrier rate lookup caching",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment", "backend"],
+      "status": {"name": "Done"},
+      "assignee": null
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-02T05:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]},
+      {"created": "2026-11-03T06:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "Done", "toString": "In Progress"}]},
+      {"created": "2026-11-04T07:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "CWB-204",
+    "fields": {
+      "summary": "Return label regeneration",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Liam Turner"}
+    },
+    "changelog": {"histories": []}
+  },
+  {
+    "key": "CWB-205",
+    "fields": {
+      "summary": "Scanner crashes on duplicate barcode",
+      "issuetype": {"name": "Bug"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Sophia Hughes"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T06:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "CWB-206",
+    "fields": {
+      "summary": "Internal dashboard tidy-up",
+      "issuetype": {"name": "Story"},
+      "labels": ["internal"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "James Patel"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T06:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  }
+]

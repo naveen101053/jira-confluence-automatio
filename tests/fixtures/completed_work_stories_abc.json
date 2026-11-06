@@ -1,0 +1,83 @@
+[
+  {
+    "key": "ABC-301",
+    "fields": {
+      "summary": "Customer self-serve refund flow",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Olivia Scott"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-05T09:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "ABC-302",
+    "fields": {
+      "summary": "Investigate checkout latency spike",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "In Progress"},
+      "assignee": {"displayName": "Mason Reed"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-03T04:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "To Do", "toString": "In Progress"}]}
+    ]}
+  },
+  {
+    "key": "ABC-303",
+    "fields": {
+      "summary": "Loyalty points rounding fix",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": null
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-06T18:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "ABC-304",
+    "fields": {
+      "summary": "Gift card balance sync job",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Ava Kim"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-01T18:30:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  },
+  {
+    "key": "ABC-305",
+    "fields": {
+      "summary": "Promo code stacking rules",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Noah Clarke"}
+    },
+    "changelog": {"histories": null}
+  },
+  {
+    "key": "ABC-306",
+    "fields": {
+      "summary": "Address autocomplete for checkout",
+      "issuetype": {"name": "Story"},
+      "labels": ["Ready for deployment", "misc"],
+      "status": {"name": "Done"},
+      "assignee": {"displayName": "Ethan Brooks"}
+    },
+    "changelog": {"histories": [
+      {"created": "2026-11-04T03:00:00.000+0000",
+       "items": [{"field": "status", "fromString": "In Progress", "toString": "Done"}]}
+    ]}
+  }
+]
