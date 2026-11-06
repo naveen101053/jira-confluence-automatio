@@ -26,3 +26,8 @@ Each entry below is an instruction file with a one-line description. Optional su
   + Target: `jira_report/calculations/**`, `tests/**/test_completed*`
   + Exceptions: does not cover assignee grouping, velocity, or Jira retrieval.
 
+- [`./instructions/Blocked-work-detection.agent.md`](./Blocked-work-detection.agent.md) — count blocked stories from a Jira issues JSON export with `tools/Blocked-work-detection.py`; defines when to use it, how to invoke it, and how to present results.
+  + Keywords: blocked work, blocked stories, blocked items, count blocked, blocked count, blocker, blocked rule
+  + Target: `tools/Blocked-work-detection.py`, `tests/fixtures/blocked_work_stories.json`
+  + Exceptions: does not extract blocker reason, assignee, dates, or Jira links; blocked rule (status/label/field) must be supplied since it is an open config item.
+

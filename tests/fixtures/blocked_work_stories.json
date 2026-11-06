@@ -1,0 +1,9 @@
+[
+  {"key": "TCL-201", "fields": {"issuetype": {"name": "Story"}, "labels": ["Ready for deployment"], "status": {"name": "Blocked"}, "assignee": {"displayName": "Asha Rao"}}},
+  {"key": "TCL-202", "fields": {"issuetype": {"name": "Story"}, "labels": ["Ready for deployment", "backend"], "status": {"name": "Blocked"}, "assignee": null}},
+  {"key": "TCL-203", "fields": {"issuetype": {"name": "Story"}, "labels": ["Ready for deployment"], "status": {"name": "In Progress"}, "assignee": {"displayName": "Vikram Shah"}}},
+  {"key": "TCL-204", "fields": {"issuetype": {"name": "Story"}, "labels": ["Blocked"], "status": {"name": "Blocked"}, "assignee": null}},
+  {"key": "TCL-205", "fields": {"issuetype": {"name": "Bug"}, "labels": ["Ready for deployment"], "status": {"name": "Blocked"}, "assignee": null}},
+  {"key": "ABC-206", "fields": {"issuetype": {"name": "Story"}, "labels": ["Ready for deployment"], "status": {"name": "Blocked"}, "assignee": null}},
+  {"key": "TCL-207", "fields": {"issuetype": {"name": "Story"}, "labels": ["Ready for deployment", "Blocked"], "status": {"name": "In Progress"}, "assignee": null}}
+]
