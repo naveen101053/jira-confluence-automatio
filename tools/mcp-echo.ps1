@@ -71,6 +71,17 @@ while ($true) {
                                 }
                                 required   = @('text')
                             }
+                        },
+                        @{
+                            name        = 'get_time'
+                            description = 'Returns the current date and time.'
+                            inputSchema = @{
+                                type       = 'object'
+                                properties = @{
+                                    utc = @{ type = 'boolean'; description = 'Return UTC time instead of local time. Defaults to false.' }
+                                }
+                                required   = @()
+                            }
                         }
                     )
                 }
@@ -85,6 +96,17 @@ while ($true) {
                     id      = $id
                     result  = @{
                         content = @(@{ type = 'text'; text = [string]$toolArgs.text })
+                    }
+                }
+            } elseif ($toolName -eq 'get_time') {
+                $useUtc = [bool]$toolArgs.utc
+                $now = if ($useUtc) { [DateTime]::UtcNow } else { Get-Date }
+                $format = if ($useUtc) { 'yyyy-MM-dd HH:mm:ss "UTC"' } else { 'yyyy-MM-dd HH:mm:ss zzz' }
+                Send-Message @{
+                    jsonrpc = '2.0'
+                    id      = $id
+                    result  = @{
+                        content = @(@{ type = 'text'; text = $now.ToString($format) })
                     }
                 }
             } else {
