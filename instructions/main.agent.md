@@ -11,6 +11,11 @@ Each entry below is an instruction file with a one-line description. Optional su
   + Keywords: create instruction, update instruction, new instruction, skill, prompt file, wrapper, catalog, main.agent.md
   + Target: `instructions/**`, `.github/prompts/**`, `.github/copilot-instructions.md`
 
+- [`./instructions/calculate-compound-interest.agent.md`](./calculate-compound-interest.agent.md) — calculate compound interest with `tools/compound_interest.py`; defines when to use it, how to invoke it, and how to present results.
+  + Keywords: compound interest, interest earned, future value, final amount, principal, annual rate, compounding, compounded monthly
+  + Target: `tools/compound_interest.py`
+  + Exceptions: does not cover simple interest, loan amortization, or recurring contributions.
+
 - [`./instructions/create-status-report.agent.md`](./create-status-report.agent.md) — generate a concise weekly status report (Accomplishments, Blockers, Next Week) in Markdown.
   + Keywords: status report, weekly report, weekly status, team update, progress report
   + Target: `reports/weekly-status-*.md`
