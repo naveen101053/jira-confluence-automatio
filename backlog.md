@@ -16,7 +16,7 @@ Decisions baked into this backlog:
 ## Phase 1: Setup
 
 ### Open configuration items (spec §7) — resolve before/alongside implementation
-- [ ] Confirm Jira site URL, service account/auth method (API token vs OAuth), and board ID(s)
+- [ ] Confirm Jira site URL, service account/auth method (API token vs OAuth), and board ID(s) — [#1](https://github.com/naveen101053/jira-confluence-automatio/issues/1)
 - [ ] Confirm exact Jira field identifier (custom field ID) for story points
 - [ ] Confirm status names/categories that count as "completed/resolved"
 - [ ] Confirm how blocked stories are identified (status, flag field, or label) and where blocker reason is stored
