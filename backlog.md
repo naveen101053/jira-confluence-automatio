@@ -57,6 +57,7 @@ Decisions baked into this backlog:
 - [ ] Implement status-change history scan to detect entry into a configured "completed" status within the window
 - [ ] Deduplicate: count a story once even if it entered/left completed status multiple times in-window
 - [ ] Exclude stories completed outside the window or with unrelated status changes
+Approach 3
 
 ### Blocked-work detection (FR-1, §5)
 - [ ] Implement configurable "blocked" rule evaluator (status / field / label based, per confirmed config)
