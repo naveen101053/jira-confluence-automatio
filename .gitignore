@@ -14,6 +14,7 @@ env/
 # Distribution / packaging
 build/
 dist/
+node_modules/
 *.egg-info/
 
 # Testing / coverage
